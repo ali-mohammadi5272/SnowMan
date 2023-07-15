@@ -1,75 +1,34 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+body{
+    background-color: lightblue;
 }
-
-body {
-    background: linear-gradient(to right bottom, rgb(200, 225, 100), rgb(200, 190, 70), rgb(200, 160, 40), rgb(200, 130, 10), rgb(200, 130, 100), rgb(225, 110, 110), rgb(200, 100, 120), rgb(200, 110, 130), rgb(200, 110, 140));
-    height: 100vh;
-}
-div.clock {
-    height: 600px;
-    width: 600px;
-    background-image: url('pic/clock.png');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    border-radius: 50%;
-    box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    margin: 50px auto;
-    min-width: 450px;
-}
-
-div.hour, div.minute, div.second{
-    height: 70%;
-    width: 70%;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-}
-
-div.clock::before{
-    content: "";
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    z-index: 6;
-    background-color: rgb(48, 48, 48);
-    position: absolute;
-}
-
-div.hour::before{
-    content: '';
-    height: 100px;
+div{
+    background-color: black;
     width: 10px;
-    background-color: yellow;
-    border-radius: 30px;
-    position: absolute;
-    z-index: 5;
-    margin-top: 110px;
-}
-
-div.minute::before{
-    content: '';
-    height: 150px;
-    width: 5px;
-    background-color: rgb(255, 0, 0);
-    border-radius: 30px;
-    z-index: 4;
-    position: absolute;
-    margin-top: 60px;
-}
-
-div.second::before{
-    content: '';
-    height: 235px;
-    width: 2px;
-    background-color: limegreen;
-    border-radius: 10px;
-    z-index: 3;
-    margin-top: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 300px auto;
+    
+    box-shadow:
+        
+    25px 0px 0px 0px black,
+        
+    12.5px 25px 0px 0px orange,
+    
+   -10px 40px 0px -2px red,
+    00px 47px 0px -2px red,
+    10px 50px 0px -2px red,
+    20px 50px 0px -2px red,
+    30px 47px 0px -2px red,
+    40px 40px 0px -2px red,
+   
+    12.5px 100px 0px 0px black,
+    12.5px 120px 0px 0px black,
+    12.5px 140px 0px 0px black,
+        
+    12.5px 25px  0px 50px white,
+    12.5px 25px  5px 50px black,
+    12.5px 130px 0px 80px white,
+    12.5px 130px 5px 80px black,
+    
+    12.5px 730px 0px 550px brown;
 }
